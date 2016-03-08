@@ -1,0 +1,12 @@
+{
+    "Description" : "GB : AAA 1234",
+
+    "RedundantCharacters" : " -",
+    
+    "ValidationRegex" : "^(GIR 0AA)|((([A-Z-[QVX]][0-9][0-9]?)|(([A-Z-[QVX]][A-Z-[IJZ]][0-9][0-9]?)|(([A-Z-[QVX]][0-9][A-HJKPSTUW])|([A-Z-[QVX]][A-Z-[IJZ]][0-9][ABEHMNPRVWXY])))) [0-9][A-Z-[CIKMOV]]{2})$",
+
+    "TestData" : {
+        "Valid" : [ "ZZ9A9ZZ", "A9Z9ZZ", "Z29ZZ", "Z699ZZ", "ZX99ZZ", "ZC999ZZ" ],
+        "Invalid" : [ "12345", "xxx123" ],
+    }
+}

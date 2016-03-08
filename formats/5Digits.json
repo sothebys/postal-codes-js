@@ -1,0 +1,12 @@
+{
+    "Description" : "5-Digits - 99999",
+
+    "RedundantCharacters" : " -",
+
+    "ValidationRegex": "^[0-9]{5}$"
+
+    "TestData" : {
+        "Valid" : [ "12345", "56785" ],
+        "Invalid" : [ "123456", "1233s", "123x3" ],
+    }
+}

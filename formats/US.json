@@ -1,0 +1,12 @@
+﻿{
+    "Description" : "US : 99999[-9999]",
+
+    "RedundantCharacters" : " -",
+
+    "ValidationRegex": "^[0-9]{5,9}$"
+
+    "TestData" : {
+        "Valid" : [ "12345", "12345-7689" ],
+        "Invalid" : [ "x1231s", "1231sd", "1010101010" ],
+    }
+}

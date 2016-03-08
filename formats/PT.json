@@ -1,0 +1,12 @@
+{
+    "Description" : "PT : 9999[ 999]",
+
+    "RedundantCharacters" : " -",
+    
+    "ValidationRegex" : "^[0-9]{4,7}$",
+
+    "TestData" : {
+        "Valid" : [ "1255", "1234567", "1234-123", "1234 123" ],
+        "Invalid" : [ "x1231s", "1231sd", "1010101010", "1234 12" ],
+    }
+}
