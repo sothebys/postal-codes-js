@@ -1,12 +1,16 @@
 {
-    "Description" : "RU : 999[-999]",
-
-    "RedundantCharacters" : " -",
-    
-    "ValidationRegex" : "^[0-9]{3,6}$"aa,
-
-    "TestData" : {
-        "Valid" : [ "125", "123456" ],
-        "Invalid" : [ "x1231s", "1231sd", "1010101010" ],
-    }
+  "Description": "RU : 999[-999]",
+  "RedundantCharacters": " -",
+  "ValidationRegex": "^[0-9]{3,6}$",
+  "TestData": {
+    "Valid": [
+      "125",
+      "123456"
+    ],
+    "Invalid": [
+      "x1231s",
+      "1231sd",
+      "1010101010"
+    ]
+  }
 }

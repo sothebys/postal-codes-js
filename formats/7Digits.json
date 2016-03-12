@@ -1,12 +1,16 @@
 {
-    "Description" : "7-Digits - 9999999",
-
-    "RedundantCharacters" : " -",
-
-    "ValidationRegex": "^[0-9]{7}$"
-
-    "TestData" : {
-        "Valid" : [ "1234567", "5678567" ],
-        "Invalid" : [ "123345456", "123s33s", "1s23x3" ],
-    }
+  "Description": "7-Digits - 9999999",
+  "RedundantCharacters": " -",
+  "ValidationRegex": "^[0-9]{7}$",
+  "TestData": {
+    "Valid": [
+      "1234567",
+      "5678567"
+    ],
+    "Invalid": [
+      "123345456",
+      "123s33s",
+      "1s23x3"
+    ]
+  }
 }
