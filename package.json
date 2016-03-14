@@ -1,0 +1,26 @@
+{
+  "name": "postal-codes-js",
+  "version": "0.0.1",
+  "description": "Postal Codes",
+  "main": "postal-codes.js",
+  "scripts": {
+    "test": "mocha test",
+    "coverage": "istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cimpress-MCP/postal-codes-js.git"
+  },
+  "author": "Ozan Kaya, Ivan Stanishev",
+  "bugs": {
+    "url": "https://github.com/Cimpress-MCP/postal-codes-js/issues"
+  },
+  "homepage": "https://github.com/Cimpress-MCP/postal-codes-js#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "coveralls": "^2.11.8",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "should": "^8.2.2"
+  }
+}

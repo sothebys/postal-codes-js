@@ -1,12 +1,16 @@
 {
-    "Description" : "3-Digits - 999",
-
-    "RedundantCharacters" : " -",
-
-    "ValidationRegex": "^[0-9]{3}$"
-
-    "TestData" : {
-        "Valid" : [ "123", "567" ],
-        "Invalid" : [ "1234", "13s", "1x3" ],
-    }
+  "Description": "3-Digits - 999",
+  "RedundantCharacters": " -",
+  "ValidationRegex": "^[0-9]{3}$",
+  "TestData": {
+    "Valid": [
+      "123",
+      "567"
+    ],
+    "Invalid": [
+      "1234",
+      "13s",
+      "1x3"
+    ]
+  }
 }

@@ -1,12 +1,15 @@
 {
-    "Description" : "MA : AAA 1234",
-
-    "RedundantCharacters" : " -",
-    
-    "ValidationRegex" : "^[A-Z]{3}[0-9]{4}$",
-
-    "TestData" : {
-        "Valid" : ["ABC1234", "SHD4783"],
-        "Invalid" : [ "ABCABC", "123ABCD" ]
-    }
+  "Description": "MA : AAA 1234",
+  "RedundantCharacters": " -",
+  "ValidationRegex": "^[A-Z]{3}[0-9]{4}$",
+  "TestData": {
+    "Valid": [
+      "ABC1234",
+      "SHD4783"
+    ],
+    "Invalid": [
+      "ABCABC",
+      "123ABCD"
+    ]
+  }
 }

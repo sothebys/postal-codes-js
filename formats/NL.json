@@ -1,12 +1,15 @@
 {
-    "Description" : "PL : 99-999",
-
-    "RedundantCharacters" : " -",
-    
-    "ValidationRegex" : "^[0-9]{4}[A-Z]{0,2}$",
-
-    "TestData" : {
-        "Valid" : ["1235DF", "5983DH"],
-        "Invalid" : [ "12j4h", "k3j51l" ],
-    }
+  "Description": "PL : 99-999",
+  "RedundantCharacters": " -",
+  "ValidationRegex": "^[0-9]{4}[A-Z]{0,2}$",
+  "TestData": {
+    "Valid": [
+      "1235DF",
+      "5983DH"
+    ],
+    "Invalid": [
+      "12j4h",
+      "k3j51l"
+    ]
+  }
 }

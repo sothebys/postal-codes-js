@@ -1,12 +1,16 @@
 {
-    "Description" : "4-Digits - 9999",
-
-    "RedundantCharacters" : " -",
-
-    "ValidationRegex": "^[0-9]{4}$"
-
-    "TestData" : {
-        "Valid" : [ "1234", "5678" ],
-        "Invalid" : [ "12345", "123s", "12x3" ],
-    }
+  "Description": "4-Digits - 9999",
+  "RedundantCharacters": " -",
+  "ValidationRegex": "^[0-9]{4}$",
+  "TestData": {
+    "Valid": [
+      "1234",
+      "5678"
+    ],
+    "Invalid": [
+      "12345",
+      "123s",
+      "12x3"
+    ]
+  }
 }
