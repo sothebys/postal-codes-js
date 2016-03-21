@@ -1,0 +1,15 @@
+{
+  "Description": "Countries with fixed postal code should not have anything after their prefix",
+  "RedundantCharacters": "",
+  "ValidationRegex": "^$",
+  "TestData": {
+    "Valid": [
+      ""
+    ],
+    "Invalid": [
+      "1",
+      "a",
+      "123"
+    ]
+  }
+}
