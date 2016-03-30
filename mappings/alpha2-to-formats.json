@@ -1,5 +1,6 @@
 {
   "3Digits.json": [
+	"AD",
     "FO",
     "IS",
     "LS",
@@ -14,7 +15,9 @@
     "AM",
     "AR",
     "AT",
+	"AX",
     "AU",
+	"AZ",
     "BD",
     "BE",
     "BE",
@@ -50,6 +53,7 @@
     "SI",
     "SJ",
     "TN",
+	"VG",
     "ZA"
   ],
   "5Digits.json": [
@@ -138,11 +142,25 @@
     "IL",
     "JP"
   ],
+  "8Digits.json": [
+    "BR"
+  ],
   "BB.json": [
     "BB"
   ],
+  "BH.json": [
+    "BH"
+  ],
+  "BN.json": [
+    "BN"
+  ],
   "CA.json": [
     "CA"
+  ],
+  "Fixed.json": [
+    "AI",
+	"AQ",
+	"IO"
   ],
   "GB.json": [
     "GB"
