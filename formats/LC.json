@@ -1,13 +1,14 @@
 {
-  "Description": "BB : CCNNNNN",
+  "Description": "LC : CCNN NNN",
   "RedundantCharacters": " -",
-  "ValidationRegex": "^(BB)?[0-9]{5}$",
+  "ValidationRegex": "^LC[0-9]{5}$",
   "TestData": {
     "Valid": [
-      "BB12345",
-      "12345"
+      "LC12 345",
+      "LC12345"
     ],
     "Invalid": [
+      "12345",
       "x1231s",
       "1231sd"
     ]

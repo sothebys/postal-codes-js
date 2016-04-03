@@ -1,7 +1,7 @@
 ﻿{
-  "Description": "US : 99999[-9999]",
+  "Description": "US : NNNNN[-NNNN]",
   "RedundantCharacters": " -",
-  "ValidationRegex": "^[0-9]{5,9}$",
+  "ValidationRegex": "^[0-9]{5}([0-9]{4})?$",
   "TestData": {
     "Valid": [
       "12345",

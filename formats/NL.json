@@ -1,13 +1,15 @@
 {
-  "Description": "PL : 99-999",
+  "Description": "NL : CC-NNNN LL",
   "RedundantCharacters": " -",
-  "ValidationRegex": "^[0-9]{4}[A-Z]{0,2}$",
+  "ValidationRegex": "^(NL)?[0-9]{4}([A-Z]{2})?$",
   "TestData": {
     "Valid": [
       "1235DF",
-      "5983DH"
+      "5983DH",
+      "NL-1000 AP"
     ],
     "Invalid": [
+      "1235D",
       "12j4h",
       "k3j51l"
     ]

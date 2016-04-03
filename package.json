@@ -4,8 +4,8 @@
   "description": "Postal Codes",
   "main": "postal-codes.js",
   "scripts": {
-    "test": "mocha test",
-    "coverage": "istanbul cover _mocha -- -R spec"
+    "coverage": "istanbul cover _mocha -- -R spec",
+    "test": "mocha test"    
   },
   "repository": {
     "type": "git",

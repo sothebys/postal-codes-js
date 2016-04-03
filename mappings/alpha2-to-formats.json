@@ -1,7 +1,10 @@
 {
+  "2Digits.json": [
+    "JM"
+  ],
   "3Digits.json": [
-	"AD",
     "FO",
+    "GN",
     "IS",
     "LS",
     "MG",
@@ -15,9 +18,7 @@
     "AM",
     "AR",
     "AT",
-	"AX",
     "AU",
-	"AZ",
     "BD",
     "BE",
     "BE",
@@ -37,7 +38,6 @@
     "HM",
     "HT",
     "HU",
-    "HU",
     "LI",
     "LR",
     "LU",
@@ -52,8 +52,8 @@
     "PY",
     "SI",
     "SJ",
+    "SV",
     "TN",
-	"VG",
     "ZA"
   ],
   "5Digits.json": [
@@ -70,12 +70,9 @@
     "EG",
     "ES",
     "FI",
-    "FM",
     "FR",
     "GR",
     "GT",
-    "GU",
-    "HN",
     "HR",
     "HR",
     "ID",
@@ -84,6 +81,7 @@
     "JO",
     "KE",
     "KH",
+    "KR",
     "KW",
     "LA",
     "LK",
@@ -91,21 +89,18 @@
     "MA",
     "MC",
     "ME",
-    "MH",
     "MM",
     "MN",
-    "MP",
     "MQ",
     "MU",
     "MX",
+    "MV",
     "MY",
     "NA",
     "NI",
     "NP",
     "PE",
     "PK",
-    "PR",
-    "PW",
     "RS",
     "SD",
     "SE",
@@ -115,9 +110,10 @@
     "TH",
     "TR",
     "TW",
+    "TZ",
     "UA",
     "UY",
-    "VI",
+    "XK",
     "YT",
     "ZM"
   ],
@@ -136,14 +132,34 @@
     "TJ",
     "TM",
     "TT",
+    "UZ",
     "VN"
   ],
   "7Digits.json": [
+    "CL",
     "IL",
     "JP"
   ],
   "8Digits.json": [
     "BR"
+  ],
+  "10Digits.json": [
+    "IR"
+  ],
+  "AD.json": [
+    "AD"
+  ],
+  "AI.json": [
+    "AI"
+  ],
+  "AQ.json": [
+    "AQ"
+  ],
+  "AX.json": [
+    "AX"
+  ],
+  "AZ.json": [
+    "AZ"
   ],
   "BB.json": [
     "BB"
@@ -151,36 +167,138 @@
   "BH.json": [
     "BH"
   ],
+  "BL.json": [
+    "BL"
+  ],
   "BN.json": [
     "BN"
   ],
   "CA.json": [
     "CA"
   ],
-  "Fixed.json": [
-    "AI",
-	"AQ",
-	"IO"
+  "FK.json": [
+    "FK"
   ],
   "GB.json": [
-    "GB"
+    "GB",
+    "GG",
+    "IM",
+    "JE"
+  ],
+  "GF.json": [
+    "GF"
+  ],
+  "GI.json": [
+    "GI"
+  ],
+  "GP.json": [
+    "GP"
+  ],
+  "GS.json": [
+    "GS"
+  ],
+  "HN.json": [
+    "HN"
+  ],
+  "IO.json": [
+    "IO"
+  ],
+  "KY.json": [
+    "KY"
+  ],
+  "LB.json": [
+    "LB"
+  ],
+  "LC.json": [
+    "LC"
+  ],
+  "LT.json": [
+    "LT"
+  ],
+  "LV.json": [
+    "LV"
+  ],
+  "MD.json": [
+    "MD"
+  ],
+  "MF.json": [
+    "MF"
+  ],
+  "MS.json": [
+    "MS"
   ],
   "MT.json": [
     "MT"
   ],
+  "NC.json": [
+    "NC"
+  ],
   "NL.json": [
     "NL"
+  ],
+  "PF.json": [
+    "PF"
   ],
   "PL.json": [
     "PL"
   ],
+  "PM.json": [
+    "PM"
+  ],
+  "PN.json": [
+    "PN"
+  ],
   "PT.json": [
     "PT"
+  ],
+  "RE.json": [
+    "RE"
   ],
   "RU.json": [
     "RU"
   ],
+  "SH.json": [
+    "SH"
+  ],
+  "SM.json": [
+    "SM"
+  ],
+  "SO.json": [
+    "SO"
+  ],
+  "SZ.json": [
+    "SZ"
+  ],
+  "TC.json": [
+    "TC"
+  ],
   "US.json": [
-    "US"
+    "FM",
+    "GU",
+    "MH",
+    "MP",
+    "PR",
+    "PW",
+    "SA",
+    "US",
+    "VI"
+  ],
+  "VA.json": [
+    "VA"
+  ],
+  "VE.json": [
+    "VE"
+  ],
+  "VC.json": [
+    "VC"
+  ],
+  "VG.json": [
+    "VG"
+  ],
+  "WF.json": [
+    "WF"
+  ],
+  "WS.json": [
+    "WS"
   ]
 }

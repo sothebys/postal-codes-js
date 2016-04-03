@@ -8,6 +8,7 @@
     },
     "ALA": {
         "countryName": "Aland Islands",
+        "postalCodeFormat": "AX.json",
         "alpha2": "AX",
         "alpha3": "ALA",
         "numeric3": "248"
@@ -35,6 +36,7 @@
     },
     "AND": {
         "countryName": "Andorra",
+        "postalCodeFormat": "AD.json",
         "alpha2": "AD",
         "alpha3": "AND",
         "numeric3": "20"
@@ -47,12 +49,14 @@
     },
     "AIA": {
         "countryName": "Anguilla",
+        "postalCodeFormat": "AI.json",
         "alpha2": "AI",
         "alpha3": "AIA",
         "numeric3": "660"
     },
     "ATA": {
         "countryName": "Antarctica",
+        "postalCodeFormat": "AQ.json",
         "alpha2": "AQ",
         "alpha3": "ATA",
         "numeric3": "10"
@@ -99,6 +103,7 @@
     },
     "AZE": {
         "countryName": "Azerbaijan",
+        "postalCodeFormat": "AZ.json",
         "alpha2": "AZ",
         "alpha3": "AZE",
         "numeric3": "31"
@@ -111,6 +116,7 @@
     },
     "BHR": {
         "countryName": "Bahrain",
+        "postalCodeFormat": "BH.json",
         "alpha2": "BH",
         "alpha3": "BHR",
         "numeric3": "48"
@@ -196,24 +202,28 @@
     },
     "BRA": {
         "countryName": "Brazil",
+        "postalCodeFormat": "8Digits.json",
         "alpha2": "BR",
         "alpha3": "BRA",
         "numeric3": "76"
     },
     "VGB": {
         "countryName": "British Virgin Islands",
+        "postalCodeFormat": "VG.json",
         "alpha2": "VG",
         "alpha3": "VGB",
         "numeric3": "92"
     },
     "IOT": {
         "countryName": "British Indian Ocean Territory",
+        "postalCodeFormat": "IO.json",
         "alpha2": "IO",
         "alpha3": "IOT",
         "numeric3": "86"
     },
     "BRN": {
         "countryName": "Brunei Darussalam",
+        "postalCodeFormat": "BN.json",
         "alpha2": "BN",
         "alpha3": "BRN",
         "numeric3": "96"
@@ -266,6 +276,7 @@
     },
     "CYM": {
         "countryName": "Cayman Islands",
+        "postalCodeFormat": "KY.json",
         "alpha2": "KY",
         "alpha3": "CYM",
         "numeric3": "136"
@@ -285,6 +296,7 @@
     },
     "CHL": {
         "countryName": "Chile",
+        "postalCodeFormat": "7Digits.json",
         "alpha2": "CL",
         "alpha3": "CHL",
         "numeric3": "152"
@@ -436,6 +448,7 @@
     },
     "SLV": {
         "countryName": "El Salvador",
+        "postalCodeFormat": "4Digits.json",
         "alpha2": "SV",
         "alpha3": "SLV",
         "numeric3": "222"
@@ -468,6 +481,7 @@
     },
     "FLK": {
         "countryName": "Falkland Islands (Malvinas)",
+        "postalCodeFormat": "FK.json",
         "alpha2": "FK",
         "alpha3": "FLK",
         "numeric3": "238"
@@ -501,12 +515,14 @@
     },
     "GUF": {
         "countryName": "French Guiana",
+        "postalCodeFormat": "GF.json",
         "alpha2": "GF",
         "alpha3": "GUF",
         "numeric3": "254"
     },
     "PYF": {
         "countryName": "French Polynesia",
+        "postalCodeFormat": "PF.json",
         "alpha2": "PF",
         "alpha3": "PYF",
         "numeric3": "258"
@@ -551,6 +567,7 @@
     },
     "GIB": {
         "countryName": "Gibraltar",
+        "postalCodeFormat": "GI.json",
         "alpha2": "GI",
         "alpha3": "GIB",
         "numeric3": "292"
@@ -577,13 +594,14 @@
     },
     "GLP": {
         "countryName": "Guadeloupe",
+        "postalCodeFormat": "GP.json",
         "alpha2": "GP",
         "alpha3": "GLP",
         "numeric3": "312"
     },
     "GUM": {
         "countryName": "Guam",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "US.json",
         "alpha2": "GU",
         "alpha3": "GUM",
         "numeric3": "316"
@@ -597,12 +615,14 @@
     },
     "GGY": {
         "countryName": "Guernsey",
+        "postalCodeFormat": "GB.json",
         "alpha2": "GG",
         "alpha3": "GGY",
         "numeric3": "831"
     },
     "GIN": {
         "countryName": "Guinea",
+        "postalCodeFormat": "3Digits.json",
         "alpha2": "GN",
         "alpha3": "GIN",
         "numeric3": "324"
@@ -636,13 +656,14 @@
     },
     "VAT": {
         "countryName": "Holy See (Vatican City State)",
+        "postalCodeFormat": "VA.json",
         "alpha2": "VA",
         "alpha3": "VAT",
         "numeric3": "336"
     },
     "HND": {
         "countryName": "Honduras",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "HN.json",
         "alpha2": "HN",
         "alpha3": "HND",
         "numeric3": "340"
@@ -677,6 +698,7 @@
     },
     "IRN": {
         "countryName": "Iran, Islamic Republic of",
+        "postalCodeFormat": "10Digits.json",
         "alpha2": "IR",
         "alpha3": "IRN",
         "numeric3": "364"
@@ -696,6 +718,7 @@
     },
     "IMN": {
         "countryName": "Isle of Man",
+        "postalCodeFormat": "GB.json",
         "alpha2": "IM",
         "alpha3": "IMN",
         "numeric3": "833"
@@ -716,6 +739,7 @@
     },
     "JAM": {
         "countryName": "Jamaica",
+        "postalCodeFormat": "2Digits.json",
         "alpha2": "JM",
         "alpha3": "JAM",
         "numeric3": "388"
@@ -729,6 +753,7 @@
     },
     "JEY": {
         "countryName": "Jersey",
+        "postalCodeFormat": "GB.json",
         "alpha2": "JE",
         "alpha3": "JEY",
         "numeric3": "832"
@@ -768,6 +793,7 @@
     },
     "KOR": {
         "countryName": "Korea, Republic of",
+        "postalCodeFormat": "5Digits.json",
         "alpha2": "KR",
         "alpha3": "KOR",
         "numeric3": "410"
@@ -795,12 +821,14 @@
     },
     "LVA": {
         "countryName": "Latvia",
+        "postalCodeFormat": "LV.json",
         "alpha2": "LV",
         "alpha3": "LVA",
         "numeric3": "428"
     },
     "LBN": {
         "countryName": "Lebanon",
+        "postalCodeFormat": "LB.json",
         "alpha2": "LB",
         "alpha3": "LBN",
         "numeric3": "422"
@@ -835,6 +863,7 @@
     },
     "LTU": {
         "countryName": "Lithuania",
+        "postalCodeFormat": "LT.json",
         "alpha2": "LT",
         "alpha3": "LTU",
         "numeric3": "440"
@@ -875,6 +904,7 @@
     },
     "MDV": {
         "countryName": "Maldives",
+        "postalCodeFormat": "5Digits.json",
         "alpha2": "MV",
         "alpha3": "MDV",
         "numeric3": "462"
@@ -894,7 +924,7 @@
     },
     "MHL": {
         "countryName": "Marshall Islands",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "US.json",
         "alpha2": "MH",
         "alpha3": "MHL",
         "numeric3": "584"
@@ -935,13 +965,14 @@
     },
     "FSM": {
         "countryName": "Micronesia, Federated States of",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "US.json",
         "alpha2": "FM",
         "alpha3": "FSM",
         "numeric3": "583"
     },
     "MDA": {
         "countryName": "Moldova",
+        "postalCodeFormat": "MD.json",
         "alpha2": "MD",
         "alpha3": "MDA",
         "numeric3": "498"
@@ -969,6 +1000,7 @@
     },
     "MSR": {
         "countryName": "Montserrat",
+        "postalCodeFormat": "MS.json",
         "alpha2": "MS",
         "alpha3": "MSR",
         "numeric3": "500"
@@ -1029,6 +1061,7 @@
     },
     "NCL": {
         "countryName": "New Caledonia",
+        "postalCodeFormat": "NC.json",
         "alpha2": "NC",
         "alpha3": "NCL",
         "numeric3": "540"
@@ -1076,7 +1109,7 @@
     },
     "MNP": {
         "countryName": "Northern Mariana Islands",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "US.json",
         "alpha2": "MP",
         "alpha3": "MNP",
         "numeric3": "580"
@@ -1104,7 +1137,7 @@
     },
     "PLW": {
         "countryName": "Palau",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "US.json",
         "alpha2": "PW",
         "alpha3": "PLW",
         "numeric3": "585"
@@ -1153,6 +1186,7 @@
     },
     "PCN": {
         "countryName": "Pitcairn",
+        "postalCodeFormat": "PN.json",
         "alpha2": "PN",
         "alpha3": "PCN",
         "numeric3": "612"
@@ -1173,7 +1207,7 @@
     },
     "PRI": {
         "countryName": "Puerto Rico",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "US.json",
         "alpha2": "PR",
         "alpha3": "PRI",
         "numeric3": "630"
@@ -1186,6 +1220,7 @@
     },
     "REU": {
         "countryName": "Réunion",
+        "postalCodeFormat": "RE.json",
         "alpha2": "RE",
         "alpha3": "REU",
         "numeric3": "638"
@@ -1212,12 +1247,14 @@
     },
     "BLM": {
         "countryName": "Saint-Barthélemy",
+        "postalCodeFormat": "BL.json",
         "alpha2": "BL",
         "alpha3": "BLM",
         "numeric3": "652"
     },
     "SHN": {
         "countryName": "Saint Helena",
+        "postalCodeFormat": "SH.json",
         "alpha2": "SH",
         "alpha3": "SHN",
         "numeric3": "654"
@@ -1230,36 +1267,42 @@
     },
     "LCA": {
         "countryName": "Saint Lucia",
+        "postalCodeFormat": "LC.json",
         "alpha2": "LC",
         "alpha3": "LCA",
         "numeric3": "662"
     },
     "MAF": {
         "countryName": "Saint-Martin (French part)",
+        "postalCodeFormat": "MF.json",
         "alpha2": "MF",
         "alpha3": "MAF",
         "numeric3": "663"
     },
     "SPM": {
         "countryName": "Saint Pierre and Miquelon",
+        "postalCodeFormat": "PM.json",
         "alpha2": "PM",
         "alpha3": "SPM",
         "numeric3": "666"
     },
     "VCT": {
         "countryName": "Saint Vincent and Grenadines",
+        "postalCodeFormat": "VC.json",
         "alpha2": "VC",
         "alpha3": "VCT",
         "numeric3": "670"
     },
     "WSM": {
         "countryName": "Samoa",
+        "postalCodeFormat": "WS.json",
         "alpha2": "WS",
         "alpha3": "WSM",
         "numeric3": "882"
     },
     "SMR": {
         "countryName": "San Marino",
+        "postalCodeFormat": "SM.json",
         "alpha2": "SM",
         "alpha3": "SMR",
         "numeric3": "674"
@@ -1272,6 +1315,7 @@
     },
     "SAU": {
         "countryName": "Saudi Arabia",
+        "postalCodeFormat": "US.json",
         "alpha2": "SA",
         "alpha3": "SAU",
         "numeric3": "682"
@@ -1331,6 +1375,7 @@
     },
     "SOM": {
         "countryName": "Somalia",
+        "postalCodeFormat": "SO.json",
         "alpha2": "SO",
         "alpha3": "SOM",
         "numeric3": "706"
@@ -1344,6 +1389,7 @@
     },
     "SGS": {
         "countryName": "South Georgia and the South Sandwich Islands",
+        "postalCodeFormat": "GS.json",
         "alpha2": "GS",
         "alpha3": "SGS",
         "numeric3": "239"
@@ -1390,6 +1436,7 @@
     },
     "SWZ": {
         "countryName": "Swaziland",
+        "postalCodeFormat": "SZ.json",
         "alpha2": "SZ",
         "alpha3": "SWZ",
         "numeric3": "748"
@@ -1430,6 +1477,7 @@
     },
     "TZA": {
         "countryName": "Tanzania *, United Republic of",
+        "postalCodeFormat": "5Digits.json",
         "alpha2": "TZ",
         "alpha3": "TZA",
         "numeric3": "834"
@@ -1495,6 +1543,7 @@
     },
     "TCA": {
         "countryName": "Turks and Caicos Islands",
+        "postalCodeFormat": "TC.json",
         "alpha2": "TC",
         "alpha3": "TCA",
         "numeric3": "796"
@@ -1553,6 +1602,7 @@
     },
     "UZB": {
         "countryName": "Uzbekistan",
+        "postalCodeFormat": "6Digits.json",
         "alpha2": "UZ",
         "alpha3": "UZB",
         "numeric3": "860"
@@ -1565,6 +1615,7 @@
     },
     "VEN": {
         "countryName": "Venezuela (Bolivarian Republic of)",
+        "postalCodeFormat": "VE.json",
         "alpha2": "VE",
         "alpha3": "VEN",
         "numeric3": "862"
@@ -1578,13 +1629,14 @@
     },
     "VIR": {
         "countryName": "Virgin Islands, US",
-        "postalCodeFormat": "5Digits.json",
+        "postalCodeFormat": "US.json",
         "alpha2": "VI",
         "alpha3": "VIR",
         "numeric3": "850"
     },
     "WLF": {
         "countryName": "Wallis and Futuna Islands",
+        "postalCodeFormat": "WF.json",
         "alpha2": "WF",
         "alpha3": "WLF",
         "numeric3": "876"
