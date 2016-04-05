@@ -1,5 +1,5 @@
 {
-  "Description": "PT : 9999[ 999]",
+  "Description": "PT : NNNN[ NNN]",
   "RedundantCharacters": " -",
   "ValidationRegex": "^([0-9]{4}|[0-9]{7})$",
   "TestData": {

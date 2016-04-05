@@ -1,7 +1,7 @@
 {
-  "Description": "RU : 999[-999]",
+  "Description": "RU : NNN[-NNN]",
   "RedundantCharacters": " -",
-  "ValidationRegex": "^[0-9]{3,6}$",
+  "ValidationRegex": "^[0-9]{3}([0-9]{3})?$",
   "TestData": {
     "Valid": [
       "125",

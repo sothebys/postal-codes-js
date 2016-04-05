@@ -1,5 +1,5 @@
 {
-  "Description": "3-Digits - 999",
+  "Description": "3-Digits - NNN",
   "RedundantCharacters": " -",
   "ValidationRegex": "^[0-9]{3}$",
   "TestData": {

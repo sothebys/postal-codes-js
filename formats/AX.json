@@ -1,0 +1,17 @@
+{
+  "Description": "AX : NNNNN, CC-NNNNN",
+  "RedundantCharacters": " -",
+  "ValidationRegex": "^(AX)?[0-9]{4}$",
+  "TestData": {
+    "Valid": [
+      "1234",
+      "AX-1234",
+	  "AX1234"
+    ],
+    "Invalid": [
+      "AX123",
+      "A1234",
+	  "AX-12345"
+    ]
+  }
+}

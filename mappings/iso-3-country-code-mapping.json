@@ -7,8 +7,7 @@
   "ALA": {
     "iso2CountryCode": "AX",
     "countryName": "Aland Islands",
-    "isoNumericCountryCode": "248",
-	"prefixes": ["", "AX"]
+    "isoNumericCountryCode": "248"
   },
   "ALB": {
     "iso2CountryCode": "AL",
@@ -28,8 +27,7 @@
   "AND": {
     "iso2CountryCode": "AD",
     "countryName": "Andorra",
-    "isoNumericCountryCode": "20",
-	"prefixes": ["AD"]
+    "isoNumericCountryCode": "20"
   },
   "AGO": {
     "iso2CountryCode": "AO",
@@ -39,14 +37,12 @@
   "AIA": {
     "iso2CountryCode": "AI",
     "countryName": "Anguilla",
-    "isoNumericCountryCode": "660",
-	"prefixes": ["AI-2640", "2640"]
+    "isoNumericCountryCode": "660"
   },
   "ATA": {
     "iso2CountryCode": "AQ",
     "countryName": "Antarctica",
-    "isoNumericCountryCode": "10",
-	"prefixes": ["BIQQ 1ZZ", "BIQQ1ZZ"]
+    "isoNumericCountryCode": "10"
   },
   "ATG": {
     "iso2CountryCode": "AG",
@@ -81,8 +77,7 @@
   "AZE": {
     "iso2CountryCode": "AZ",
     "countryName": "Azerbaijan",
-    "isoNumericCountryCode": "31",
-	"prefixes": ["AZ"]
+    "isoNumericCountryCode": "31"
   },
   "BHS": {
     "iso2CountryCode": "BS",
@@ -162,14 +157,12 @@
   "VGB": {
     "iso2CountryCode": "VG",
     "countryName": "British Virgin Islands",
-    "isoNumericCountryCode": "92",
-	"prefixes": ["VG"]
+    "isoNumericCountryCode": "92"
   },
   "IOT": {
     "iso2CountryCode": "IO",
     "countryName": "British Indian Ocean Territory",
-    "isoNumericCountryCode": "86",
-	"prefixes": ["BBND 1ZZ", "BBND1ZZ"]
+    "isoNumericCountryCode": "86"
   },
   "BRN": {
     "iso2CountryCode": "BN",

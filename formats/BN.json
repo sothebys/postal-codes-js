@@ -1,5 +1,5 @@
 {
-  "Description": "BH : LLNNNN",
+  "Description": "BN : LLNNNN",
   "RedundantCharacters": " -",
   "ValidationRegex": "^[a-zA-Z]{2}[0-9]{4}$",
   "TestData": {
