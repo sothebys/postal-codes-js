@@ -5,7 +5,7 @@
   "main": "postal-codes.js",
   "scripts": {
     "coverage": "istanbul cover _mocha -- -R spec",
-    "test": "mocha test"    
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,24 @@
     "url": "https://github.com/Cimpress-MCP/postal-codes-js/issues"
   },
   "homepage": "https://github.com/Cimpress-MCP/postal-codes-js#readme",
-  "dependencies": {},
+  "dependencies": {
+    "path": "^0.12.7"
+  },
   "devDependencies": {
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "should": "^8.2.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "postal",
+    "code",
+    "validation",
+    "postcode",
+    "js"
+  ],
+  "license": "Apache-2.0"
 }

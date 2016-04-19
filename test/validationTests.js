@@ -19,9 +19,9 @@ describe('Postal codes validation: ', function () {
             })
         });
 
-        format.TestData.Invalid.map(function (validPostalCode) {
-            it(alpha2Code + ' / ' + validPostalCode + ' is NOT valid', function () {
-                postalCodes.validate(alpha2Code, validPostalCode).should.eql(false);
+        format.TestData.Invalid.map(function (invalidPostalCode) {
+            it(alpha2Code + ' / ' + invalidPostalCode + ' is NOT valid', function () {
+                postalCodes.validate(alpha2Code, invalidPostalCode).should.eql(false);
             })
         });
     });

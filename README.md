@@ -5,9 +5,6 @@
 Provide postal code validation for javascript
 
 
-## Still in development / no release yet
-
-
 ### Validation rules
 1. Characters " " (space) and "-" (dash) are removed from the passed string
 2. Case doesn't matter
@@ -15,6 +12,22 @@ Provide postal code validation for javascript
 ### Testing with mocha
     $ npm test
     $ npm run coverage
+	
+### Usage
+```
+var postalCodes = require('postal-codes-js');
+
+// All the calls below returns true
+postalCodes.validate('bg', '1003');
+postalCodes.validate('gb', 'EC1A 1BB');
+postalCodes.validate('gb', 'EC1A1BB');
+postalCodes.validate('gb', 'EC1A-1BB');
+postalCodes.validate('tr', '33150');
+postalCodes.validate('us', '22313');
+```
 
 ## Contribution
 Contributions are more than welcome, just fork the repo and create a pull-request ;)
+
+## Contact
+postalcodesjs@gmail.com
