@@ -1,8 +1,9 @@
 [![Build Status](https://travis-ci.org/Cimpress-MCP/postal-codes-js.svg?branch=master)](https://travis-ci.org/Cimpress-MCP/postal-codes-js)
 [![Coverage Status](https://coveralls.io/repos/github/Cimpress-MCP/postal-codes-js/badge.svg?branch=master)](https://coveralls.io/github/Cimpress-MCP/postal-codes-js?branch=master)
+[![npm version](https://badge.fury.io/js/postal-codes-js.svg)](https://badge.fury.io/js/postal-codes-js)
 
 # postal-codes.js
-Provide postal code validation for javascript
+Provide javascript postal code validation for [all  countries](https://en.wikipedia.org/wiki/List_of_postal_codes).
 
 
 ### Validation rules
