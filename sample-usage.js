@@ -1,5 +1,4 @@
-
-var postalCodes = require('./postal-codes')
+var postalCodes = require('./postal-codes');
 
 
 var pc1 = 'CW3 9SS';
