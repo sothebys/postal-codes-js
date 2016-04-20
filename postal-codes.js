@@ -17,7 +17,18 @@ module.exports.validate = function (countryCode, postalCode, callback) {
 };
 
 function validatePostalCodeInternal(countryCode, postalCode, callback) {
+    if (!countryCode) {
+        callback('Invalid country code.');
+        return;
+    }
+
+    if (!postalCode) {
+        callback('Invalid postal code.');
+        return;
+    }
+
     var countryData = undefined;
+    countryCode = countryCode.trim();
 
     // Is it alpha2 ?
     if (countryCode.length == 2) {
@@ -30,15 +41,17 @@ function validatePostalCodeInternal(countryCode, postalCode, callback) {
     }
 
     if (!countryData) {
-        return callback("Unknown alpha2/alpha3 country code: " + countryCode);
+        callback('Unknown alpha2/alpha3 country code: ' + countryCode);
+        return;
     }
 
     var format = require(path.join(__dirname, 'formats', countryData.postalCodeFormat));
     if (!format) {
-        return callback('Failed to load postal code format "' + countryData.postalCodeFormat + '".');
+        callback('Failed to load postal code format "' + countryData.postalCodeFormat + '".');
+        return;
     }
 
-    // This feels wrong ;)
+    postalCode = postalCode.toString().trim();
     var preparedPostalCode = postalCode.slice(0);
     for(var i=0; i<format.RedundantCharacters.length; i++) {
         preparedPostalCode = preparedPostalCode.replace(new RegExp(format.RedundantCharacters[i], 'g'), '');
@@ -46,7 +59,7 @@ function validatePostalCodeInternal(countryCode, postalCode, callback) {
 
     var expression = format.ValidationRegex;
     if (expression instanceof Array) {
-        expression = '^' + expression.join("|") + '$';
+        expression = '^' + expression.join('|') + '$';
     }
 
     var regexp = new RegExp(expression, 'i');
@@ -54,14 +67,16 @@ function validatePostalCodeInternal(countryCode, postalCode, callback) {
 
     if (!result) {
         // Invalid postal code
-        return callback(null, false);
+        callback(null, false);
+        return;
     }
 
     if (result[0].toLowerCase() != preparedPostalCode.toLowerCase()) {
-        // Found "sub" match ... (not sure what I did wrong with ^ and $ ...)
-        return callback(null, false);
+        // Found "sub" match
+        callback(null, false);
+        return;
     }
 
     // Valid postal code
-    return callback(null, true);
+    callback(null, true);
 }
