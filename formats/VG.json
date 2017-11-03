@@ -1,5 +1,5 @@
 {
-  "Description": "VG : CCNNNNN",
+  "Description": "VG : CCNNNN",
   "RedundantCharacters": " -",
   "ValidationRegex": "^(VG)?[0-9]{4}$",
   "TestData": {
