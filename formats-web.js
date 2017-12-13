@@ -1,0 +1,64 @@
+var formats = {} ;
+
+formats["10Digits.json"] = require("./formats/10Digits");
+formats["2Digits.json"] = require("./formats/2Digits");
+formats["3Digits.json"] = require("./formats/3Digits");
+formats["4Digits.json"] = require("./formats/4Digits");
+formats["5Digits.json"] = require("./formats/5Digits");
+formats["6Digits.json"] = require("./formats/6Digits");
+formats["7Digits.json"] = require("./formats/7Digits");
+formats["8Digits.json"] = require("./formats/8Digits");
+formats["AD.json"] = require("./formats/AD");
+formats["AI.json"] = require("./formats/AI");
+formats["AQ.json"] = require("./formats/AQ");
+formats["AX.json"] = require("./formats/AX");
+formats["AZ.json"] = require("./formats/AZ");
+formats["BB.json"] = require("./formats/BB");
+formats["BH.json"] = require("./formats/BH");
+formats["BL.json"] = require("./formats/BL");
+formats["BN.json"] = require("./formats/BN");
+formats["CA.json"] = require("./formats/CA");
+formats["FK.json"] = require("./formats/FK");
+formats["GB.json"] = require("./formats/GB");
+formats["GF.json"] = require("./formats/GF");
+formats["GI.json"] = require("./formats/GI");
+formats["GP.json"] = require("./formats/GP");
+formats["GS.json"] = require("./formats/GS");
+formats["HN.json"] = require("./formats/HN");
+formats["IO.json"] = require("./formats/IO");
+formats["KY.json"] = require("./formats/KY");
+formats["LB.json"] = require("./formats/LB");
+formats["LC.json"] = require("./formats/LC");
+formats["LT.json"] = require("./formats/LT");
+formats["LV.json"] = require("./formats/LV");
+formats["MD.json"] = require("./formats/MD");
+formats["MF.json"] = require("./formats/MF");
+formats["MS.json"] = require("./formats/MS");
+formats["MT.json"] = require("./formats/MT");
+formats["NC.json"] = require("./formats/NC");
+formats["NL.json"] = require("./formats/NL");
+formats["PF.json"] = require("./formats/PF");
+formats["PL.json"] = require("./formats/PL");
+formats["PM.json"] = require("./formats/PM");
+formats["PN.json"] = require("./formats/PN");
+formats["PT.json"] = require("./formats/PT");
+formats["RE.json"] = require("./formats/RE");
+formats["RU.json"] = require("./formats/RU");
+formats["SH.json"] = require("./formats/SH");
+formats["SM.json"] = require("./formats/SM");
+formats["SO.json"] = require("./formats/SO");
+formats["SZ.json"] = require("./formats/SZ");
+formats["TC.json"] = require("./formats/TC");
+formats["US.json"] = require("./formats/US");
+formats["VA.json"] = require("./formats/VA");
+formats["VC.json"] = require("./formats/VC");
+formats["VE.json"] = require("./formats/VE");
+formats["VG.json"] = require("./formats/VG");
+formats["WF.json"] = require("./formats/WF");
+formats["WS.json"] = require("./formats/WS");
+
+
+module.exports = function getFormat(postalCodeFormat){
+    var format = formats[postalCodeFormat];
+    return format;
+}
