@@ -1,8 +1,8 @@
 {
   "Description": "GB",
   "RedundantCharacters": " -",
-  "ValidationRegex": "[A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]?[0-9][ABD-HJLN-UW-Z]{2}|GIR0AA",
-  "ValidationRegex.DOC": "http://regexlib.com/REDetails.aspx?regexp_id=260&AspxAutoDetectCookieSupport=1",
+  "ValidationRegex": "((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([AZa-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9]?[A-Za-z]))))[0-9][A-Za-z]{2})|GIR0AA",
+  "ValidationRegex.DOC": "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/488478/Bulk_Data_Transfer_-_additional_validation_valid_from_12_November_2015.pdf",
   "TestData": {
     "Valid": [
       "CW3 9SS",
@@ -20,7 +20,9 @@
       "B33 8TH",
       "CR2 6XH",
       "DN55 1PT",
-      "GIR 0AA"
+      "GIR 0AA",
+      "W1U 1BW",
+      "SK8 7NA"
     ],
     "Invalid": [
       "WC2H 7LTa",
