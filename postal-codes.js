@@ -1,6 +1,13 @@
-var path = require('path');
-var byAlpha2 = require(path.join(__dirname, 'generated', 'postal-codes-alpha2.json'));
-var byAlpha3 = require(path.join(__dirname, 'generated', 'postal-codes-alpha3.json'));
+var byAlpha2 = require('./generated/postal-codes-alpha2.json');
+var byAlpha3 = require('./generated/postal-codes-alpha3.json');
+var isNode = require('detect-node');
+
+var getFormat = null;
+if (isNode) {
+    getFormat = require("./formats-node") ;
+} else {
+    getFormat = require("./formats-web") ;
+}
 
 module.exports.validate = function (countryCode, postalCode, callback) {
 
@@ -45,7 +52,7 @@ function validatePostalCodeInternal(countryCode, postalCode, callback) {
         return;
     }
 
-    var format = require(path.join(__dirname, 'formats', countryData.postalCodeFormat));
+    var format = getFormat(countryData.postalCodeFormat);
     if (!format) {
         callback('Failed to load postal code format "' + countryData.postalCodeFormat + '".');
         return;
