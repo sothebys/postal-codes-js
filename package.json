@@ -1,6 +1,6 @@
 {
   "name": "postal-codes-js",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Postal Codes",
   "main": "postal-codes.js",
   "scripts": {
@@ -21,10 +21,10 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
-    "should": "^8.2.2"
+    "mocha": "^2.4.5"
   },
   "directories": {
     "test": "test"

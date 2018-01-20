@@ -59,6 +59,5 @@ formats["WS.json"] = require("./formats/WS.json");
 
 
 module.exports = function getFormat(postalCodeFormat){
-    var format = formats[postalCodeFormat];
-    return format;
-}
+    return formats[postalCodeFormat];
+};
