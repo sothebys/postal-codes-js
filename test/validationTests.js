@@ -6,7 +6,7 @@ describe('Postal codes validation: ', function () {
     const countriesData = require('../generated/postal-codes-alpha2');
     Object.keys(countriesData).map(function (alpha2Code) {
 
-        let formatFileName = countriesData[alpha2Code].postalCodeFormat;
+        var formatFileName = countriesData[alpha2Code].postalCodeFormat;
         if ( !formatFileName ) {
             console.log('Cannot find format file for ' + alpha2Code);
             return;
