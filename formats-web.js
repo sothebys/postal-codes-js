@@ -1,4 +1,6 @@
-var formats = {} ;
+'use strict';
+
+const formats = {} ;
 
 formats["10Digits.json"] = require("./formats/10Digits.json");
 formats["2Digits.json"] = require("./formats/2Digits.json");

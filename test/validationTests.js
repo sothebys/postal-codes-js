@@ -1,3 +1,5 @@
+'use strict';
+
 const postalCodes = require('../postal-codes.js');
 const expect = require('chai').expect;
 

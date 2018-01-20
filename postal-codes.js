@@ -1,3 +1,5 @@
+'use strict';
+
 const byAlpha2 = require('./generated/postal-codes-alpha2.json');
 const byAlpha3 = require('./generated/postal-codes-alpha3.json');
 const isNode = require('detect-node');
