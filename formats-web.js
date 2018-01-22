@@ -1,4 +1,6 @@
-var formats = {} ;
+'use strict';
+
+const formats = {} ;
 
 formats["10Digits.json"] = require("./formats/10Digits.json");
 formats["2Digits.json"] = require("./formats/2Digits.json");
@@ -59,6 +61,5 @@ formats["WS.json"] = require("./formats/WS.json");
 
 
 module.exports = function getFormat(postalCodeFormat){
-    var format = formats[postalCodeFormat];
-    return format;
-}
+    return formats[postalCodeFormat];
+};

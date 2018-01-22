@@ -1,89 +1,70 @@
-var byAlpha2 = require('./generated/postal-codes-alpha2.json');
-var byAlpha3 = require('./generated/postal-codes-alpha3.json');
-var isNode = require('detect-node');
+'use strict';
 
-var getFormat = null;
-if (isNode) {
-    getFormat = require("./formats-node") ;
+const byAlpha2 = require('./generated/postal-codes-alpha2.json');
+const byAlpha3 = require('./generated/postal-codes-alpha3.json');
+const isNode = require('detect-node');
+
+let getFormat = null;
+if ( isNode ) {
+    getFormat = require("./formats-node");
 } else {
-    getFormat = require("./formats-web") ;
+    getFormat = require("./formats-web");
 }
 
-module.exports.validate = function (countryCode, postalCode, callback) {
+module.exports.validate = function (countryCode, postalCode) {
 
-    if (callback) {
-        return validatePostalCodeInternal(countryCode, postalCode, callback);
+    if ( !countryCode ) {
+        return "Missing country code.";
     }
 
-    var result;
-    validatePostalCodeInternal(countryCode, postalCode, function (err, isValid) {
-        result = isValid;
-    });
-
-    return result;
-};
-
-function validatePostalCodeInternal(countryCode, postalCode, callback) {
-    if (!countryCode) {
-        callback('Invalid country code.');
-        return;
+    if ( !postalCode ) {
+        return 'Missing postal code.';
     }
 
-    if (!postalCode) {
-        callback('Invalid postal code.');
-        return;
-    }
-
-    var countryData = undefined;
-    countryCode = countryCode.trim();
+    let countryData = undefined;
+    let preparedCountryCode = countryCode.trim().toUpperCase();
 
     // Is it alpha2 ?
-    if (countryCode.length == 2) {
-        countryData = byAlpha2[countryCode.toUpperCase()];
+    if ( preparedCountryCode.length == 2 ) {
+        countryData = byAlpha2[preparedCountryCode];
     }
 
     // Is it alpha3 ?
-    if (countryCode.length == 3) {
-        countryData = byAlpha3[countryCode.toUpperCase()];
+    if ( preparedCountryCode.length == 3 ) {
+        countryData = byAlpha3[preparedCountryCode];
     }
 
-    if (!countryData) {
-        callback('Unknown alpha2/alpha3 country code: ' + countryCode);
-        return;
+    if ( !countryData ) {
+        return 'Unknown alpha2/alpha3 country code: ' + preparedCountryCode;
     }
 
-    var format = getFormat(countryData.postalCodeFormat);
-    if (!format) {
-        callback('Failed to load postal code format "' + countryData.postalCodeFormat + '".');
-        return;
+    let format = getFormat(countryData.postalCodeFormat);
+    if ( !format ) {
+        return 'Failed to load postal code format "' + countryData.postalCodeFormat + '".';
     }
 
-    postalCode = postalCode.toString().trim();
-    var preparedPostalCode = postalCode.slice(0);
-    for(var i=0; i<format.RedundantCharacters.length; i++) {
+    let preparedPostalCode = postalCode.toString().trim().slice(0);
+    for (let i = 0; i < format.RedundantCharacters.length; i++) {
         preparedPostalCode = preparedPostalCode.replace(new RegExp(format.RedundantCharacters[i], 'g'), '');
     }
 
-    var expression = format.ValidationRegex;
-    if (expression instanceof Array) {
+    let expression = format.ValidationRegex;
+    if ( expression instanceof Array ) {
         expression = '^' + expression.join('|') + '$';
     }
 
-    var regexp = new RegExp(expression, 'i');
-    var result = regexp.exec(preparedPostalCode);
+    const regexp = new RegExp(expression, 'i');
+    let result = regexp.exec(preparedPostalCode);
 
-    if (!result) {
+    if ( !result ) {
         // Invalid postal code
-        callback(null, false);
-        return;
+        return "Postal code " + preparedPostalCode + " is not valid for country " + preparedCountryCode;
     }
 
-    if (result[0].toLowerCase() != preparedPostalCode.toLowerCase()) {
+    if ( result[0].toLowerCase() != preparedPostalCode.toLowerCase() ) {
         // Found "sub" match
-        callback(null, false);
-        return;
+        return "Postal code " + preparedPostalCode + " is not valid for country " + preparedCountryCode;
     }
 
-    // Valid postal code
-    callback(null, true);
-}
+    return true;
+};
