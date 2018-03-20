@@ -6,6 +6,15 @@ module.exports = {
     library: "postal-codes-js",
     filename: "index.js"
   },
-  devtool: false,
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  },
   target: "web"
 };
