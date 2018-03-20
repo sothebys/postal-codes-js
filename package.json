@@ -4,7 +4,7 @@
   "description": "Postal Codes",
   "main": "dist/postal-codes-js.js",
   "scripts": {
-    "build":"parcel build postal-codes.js",
+    "build": "webpack index.js --mode production",
     "coverage": "istanbul cover _mocha -- -R spec",
     "test": "mocha test"
   },
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Cimpress-MCP/postal-codes-js#readme",
   "dependencies": {
     "detect-node": "^2.0.3",
+    "json-loader": "^0.5.7",
     "path": "^0.12.7"
   },
   "devDependencies": {
@@ -26,7 +27,8 @@
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
-    "parcel-bundler": "1.6.2"
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
   },
   "directories": {
     "test": "test"

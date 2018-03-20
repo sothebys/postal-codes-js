@@ -1,6 +1,4 @@
-'use strict';
-
-const formats = {} ;
+const formats = {};
 
 formats["10Digits.json"] = require("./formats/10Digits.json");
 formats["2Digits.json"] = require("./formats/2Digits.json");
@@ -51,7 +49,8 @@ formats["SM.json"] = require("./formats/SM.json");
 formats["SO.json"] = require("./formats/SO.json");
 formats["SZ.json"] = require("./formats/SZ.json");
 formats["TC.json"] = require("./formats/TC.json");
-formats["US.json"] = require("./formats/US.json");
+formats["US.json"] =
+  '{"Description":"US : NNNNN[-NNNN]","RedundantCharacters":" -","ValidationRegex":"^[0-9]{5}([0-9]{4})?$","TestData":{"Valid":["12345","12345-7689"],"Invalid":["x1231s","1231sd","1010101010"]}}"';
 formats["VA.json"] = require("./formats/VA.json");
 formats["VC.json"] = require("./formats/VC.json");
 formats["VE.json"] = require("./formats/VE.json");
@@ -59,7 +58,6 @@ formats["VG.json"] = require("./formats/VG.json");
 formats["WF.json"] = require("./formats/WF.json");
 formats["WS.json"] = require("./formats/WS.json");
 
-
-module.exports = function getFormat(postalCodeFormat){
-    return formats[postalCodeFormat];
+module.exports = function getFormat(postalCodeFormat) {
+  return formats[postalCodeFormat];
 };
