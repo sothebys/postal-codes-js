@@ -2,8 +2,9 @@
   "name": "postal-codes-js",
   "version": "1.0.0",
   "description": "Postal Codes",
-  "main": "postal-codes.js",
+  "main": "dist/postal-codes-js.js",
   "scripts": {
+    "build":"parcel build postal-codes.js",
     "coverage": "istanbul cover _mocha -- -R spec",
     "test": "mocha test"
   },
@@ -24,7 +25,8 @@
     "chai": "^4.1.2",
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "parcel-bundler": "1.6.2"
   },
   "directories": {
     "test": "test"
