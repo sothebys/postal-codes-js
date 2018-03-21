@@ -50,7 +50,7 @@ formats["SO.json"] = require("./formats/SO.json");
 formats["SZ.json"] = require("./formats/SZ.json");
 formats["TC.json"] = require("./formats/TC.json");
 formats["US.json"] =
-  '{"Description":"US : NNNNN[-NNNN]","RedundantCharacters":" -","ValidationRegex":"^[0-9]{5}([0-9]{4})?$","TestData":{"Valid":["12345","12345-7689"],"Invalid":["x1231s","1231sd","1010101010"]}}"';
+  JSON.parse('{"Description":"US : NNNNN[-NNNN]","RedundantCharacters":" -","ValidationRegex":"^[0-9]{5}([0-9]{4})?$","TestData":{"Valid":["12345","12345-7689"],"Invalid":["x1231s","1231sd","1010101010"]}}"');
 formats["VA.json"] = require("./formats/VA.json");
 formats["VC.json"] = require("./formats/VC.json");
 formats["VE.json"] = require("./formats/VE.json");
