@@ -90,12 +90,6 @@ describe('Postal codes border cases: ', function () {
             postalCode: 'Hong Kong',
             description: 'should return true all the time because it does not use postal codes',
             expectedResult: true
-        },
-        {
-            countryCode: 'IE',
-            postalCode: 'Anything 321',
-            description: 'should return true all the time because it does not use postal codes',
-            expectedResult: true
         }
     ];
 
