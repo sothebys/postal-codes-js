@@ -1,7 +1,7 @@
 {
   "Description": "CA : A0A 0A0",
   "RedundantCharacters": " -",
-  "ValidationRegex": "^[A-Z][0-9][A-Z][0-9][A-Z][0-9]$",
+  "ValidationRegex": "^[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][\\s\\-]?\\d[ABCEGHJ-NPRSTV-Z]\\d$",
   "TestData": {
     "Valid": [
       "A4B5X5",
