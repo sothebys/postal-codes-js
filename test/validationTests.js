@@ -9,7 +9,7 @@ describe('Postal codes validation: ', function () {
     Object.keys(countriesData).map(function (alpha2Code) {
 
         var formatFileName = countriesData[alpha2Code].postalCodeFormat;
-        if ( !formatFileName ) {
+        if (!formatFileName) {
             console.log('Cannot find format file for ' + alpha2Code);
             return;
         }
@@ -83,6 +83,18 @@ describe('Postal codes border cases: ', function () {
             countryCode: ' us ',
             postalCode: ' 98001 ',
             description: 'should trim white spaces in input',
+            expectedResult: true
+        },
+        {
+            countryCode: 'HK',
+            postalCode: 'Hong Kong',
+            description: 'should return true all the time because it does not use postal codes',
+            expectedResult: true
+        },
+        {
+            countryCode: 'IE',
+            postalCode: 'Anything 321',
+            description: 'should return true all the time because it does not use postal codes',
             expectedResult: true
         }
     ];

@@ -5,7 +5,7 @@ const byAlpha3 = require('./generated/postal-codes-alpha3.json');
 const isNode = require('detect-node');
 
 let getFormat = null;
-if ( isNode ) {
+if (isNode) {
     getFormat = require("./formats-node");
 } else {
     getFormat = require("./formats-web");
@@ -13,11 +13,11 @@ if ( isNode ) {
 
 module.exports.validate = function (countryCode, postalCode) {
 
-    if ( !countryCode ) {
+    if (!countryCode) {
         return "Missing country code.";
     }
 
-    if ( !postalCode ) {
+    if (!postalCode) {
         return 'Missing postal code.';
     }
 
@@ -25,21 +25,26 @@ module.exports.validate = function (countryCode, postalCode) {
     let preparedCountryCode = countryCode.trim().toUpperCase();
 
     // Is it alpha2 ?
-    if ( preparedCountryCode.length == 2 ) {
+    if (preparedCountryCode.length == 2) {
         countryData = byAlpha2[preparedCountryCode];
     }
 
     // Is it alpha3 ?
-    if ( preparedCountryCode.length == 3 ) {
+    if (preparedCountryCode.length == 3) {
         countryData = byAlpha3[preparedCountryCode];
     }
 
-    if ( !countryData ) {
+    if (!countryData) {
         return 'Unknown alpha2/alpha3 country code: ' + preparedCountryCode;
     }
 
+    // The country/region does not use postal codes
+    if (!countryData.postalCodeFormat) {
+        return true;
+    }
+
     let format = getFormat(countryData.postalCodeFormat);
-    if ( !format ) {
+    if (!format) {
         return 'Failed to load postal code format "' + countryData.postalCodeFormat + '".';
     }
 
@@ -49,19 +54,19 @@ module.exports.validate = function (countryCode, postalCode) {
     }
 
     let expression = format.ValidationRegex;
-    if ( expression instanceof Array ) {
+    if (expression instanceof Array) {
         expression = '^' + expression.join('|') + '$';
     }
 
     const regexp = new RegExp(expression, 'i');
     let result = regexp.exec(preparedPostalCode);
 
-    if ( !result ) {
+    if (!result) {
         // Invalid postal code
         return "Postal code " + preparedPostalCode + " is not valid for country " + preparedCountryCode;
     }
 
-    if ( result[0].toLowerCase() != preparedPostalCode.toLowerCase() ) {
+    if (result[0].toLowerCase() != preparedPostalCode.toLowerCase()) {
         // Found "sub" match
         return "Postal code " + preparedPostalCode + " is not valid for country " + preparedCountryCode;
     }
