@@ -9,7 +9,7 @@ describe('Postal codes validation: ', function () {
     Object.keys(countriesData).map(function (alpha2Code) {
 
         var formatFileName = countriesData[alpha2Code].postalCodeFormat;
-        if (!formatFileName) {
+        if ( !formatFileName ) {
             console.log('Cannot find format file for ' + alpha2Code);
             return;
         }
