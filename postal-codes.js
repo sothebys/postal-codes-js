@@ -38,6 +38,11 @@ module.exports.validate = function (countryCode, postalCode) {
         return 'Unknown alpha2/alpha3 country code: ' + preparedCountryCode;
     }
 
+    // If the country/region does not use postal codes
+    if ( !countryData.postalCodeFormat ) {
+        return true;
+    }
+
     let format = getFormat(countryData.postalCodeFormat);
     if ( !format ) {
         return 'Failed to load postal code format "' + countryData.postalCodeFormat + '".';
