@@ -1,12 +1,10 @@
 language: node_js
 node_js:
+- '10'
+- '8'
+- '6'
 - '5'
-- '5.1'
 - '4'
-- '4.2'
-- '4.1'
-- '4.0'
-- iojs
 install:
 - npm install
 script: npm run coverage
@@ -14,8 +12,8 @@ after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.
 deploy:
   provider: npm
   skip_cleanup: true
-  email: "postalcodesjs@gmail.com"
-  api_key:
-    secure: CuhDn26PrOS2L/vGf/rO+kVYxHyDnOoahtW7lmh5/x/qM1XLYSK2TMOFsDHftKWshtBBrYm8OJxZI8S+U/tsGWFlgxhzlGglF2wgNCEOcU790CHYxV9o0RCHMX6OHe76JZFjq8SKJejZcSP8+5faaKeYL8Hr9Q/I+A/P666z6IIQJ4Cg77qO1C6ZdOMGpgXUuTTZF+IFhaskB72sjSE66XGI1VJachR9LS5QQHuiEslVKeadikLFLmIdb1m7l0I89P4QprVZQzWPAoPpEaKt+EZr82wQYlBOXQynwtTZY6MO6Lf9slIcBfB5nFTCkgRg7S4xjMT71X6ZlGlGhX5ZEjNlrLAAYZwnUkl6m8IS5LEpThIydPxNSuhx9OSUstfv/p0Jx1H47+BpYRUKhF+6n8ht9OQ+M1Om/8jgReR4P39aBpYtdCqZmr9mvh4k14/f+598mpzh/bs4lIjaaEq0q1BgH9TEH5vPPKFBpsV+RassNQOOAiXMXtG0KHp49YUMidLr7rBz/RWXo09kQ49pV14KJNvEkvipov5tLS9fGkWsWjtQn29RebB1EB2FTHOFxaASbHO6HwgTtOi8pz0hifOVYeZo9htYZWr2bk24K1Pt4e1e6IVOxhXLKC8y5dFGgWXURwvxr/DJOn722N90XaUhebImQgW4RZ5zb4vpHOs=
   on:
     branch: master
+  email: PostalCodesJS@cimpress.com
+  api_key:
+    secure: pjukBZZa2TjCOqXLSTXzOTVSakalh22PyCHnRNk5MNwcys05aG5C4oB9PIFJfGMPBqqcMt7iE99xGY3zbJ32A9MucG5QOn8a1rbokmNvKTGCvVGsQfZAgmCvm+eZhrLVxqNiapXzN++ezmLTJ+2/ycYUTigToRYIY42aG6eY4MOqWLRPMg0RBDSUqYh5aG4DVXbz3dI9wiqOAAnUVC3S7TqKSvr7BHatgnQmeZUMW843lwhfbTCtPpzUtN24Enp78Nwzlt70rdI6niFVg3XBAT6NlPbg8Js2HYfxBTAgwCEJQRCYRBcufMfC7U4tl7azZa9rJUXQD5nlpY5eYrsrSslZXGHpl2WpVxop9Tze4t51/xUfmCx4t59d2ng5i+JmQhQ2/NUpYAAqvr4yHrAxprNKa4rxzMkM4O9Wn3e7H6LqPrmLmznuUBx0rRE/vrKd6BmVMh0YDa6fS/52n0HUdv2lD7DwGRo922xR3xFJn4UbweK2pmyAD9XROO+IPQyWF/dZOfFKK9PNq6+86E16JzjCasH5wJbqjJnu1D91SeKx9zgfCSI2q3Exx7IAURhAN58wCqbJf3xC27ee4EP4WDwR8FC/OYD5Ag914odpj2SqjjsXxKWEBA+gtMfzl8wLjCgQr+JITCDHOSitNBUpGesT+a13zYF5ljWvUxQSsH0=

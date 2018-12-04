@@ -13,7 +13,7 @@ Provide javascript postal code validation for [all  countries](https://en.wikipe
 ### Testing with mocha
     $ npm test
     $ npm run coverage
-	
+
 ### Usage
 ```
 var postalCodes = require('postal-codes-js');
@@ -31,4 +31,4 @@ postalCodes.validate('us', '22313');
 Contributions are more than welcome, just fork the repo and create a pull-request ;)
 
 ## Contact
-postalcodesjs@gmail.com
+PostalCodesJS@cimpress.com

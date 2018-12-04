@@ -84,6 +84,12 @@ describe('Postal codes border cases: ', function () {
             postalCode: ' 98001 ',
             description: 'should trim white spaces in input',
             expectedResult: true
+        },
+        {
+            countryCode: 'HK',
+            postalCode: 'Hong Kong',
+            description: 'should return true all the time because it does not use postal codes',
+            expectedResult: true
         }
     ];
 
